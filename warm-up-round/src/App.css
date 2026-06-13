@@ -1,0 +1,170 @@
+.app-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--text);
+}
+
+.hero-panel {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.subtitle {
+  max-width: 760px;
+  margin-top: 12px;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.control-panel,
+.summary-panel {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.control-panel h2,
+.summary-card h2,
+.result-card h2 {
+  margin-top: 0;
+}
+
+.control-panel label {
+  display: block;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.control-panel select,
+.control-panel input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: white;
+  color: var(--text-h);
+}
+
+.primary-button {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.primary-button:hover {
+  opacity: 0.95;
+}
+
+.summary-panel {
+  display: grid;
+  gap: 20px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+}
+
+.status-good {
+  color: #1d7a2b;
+  font-weight: 600;
+}
+
+.status-warning {
+  color: #a02715;
+  font-weight: 600;
+}
+
+.results-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.result-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: left;
+}
+
+.meal-list {
+  display: grid;
+  gap: 16px;
+}
+
+.meal-item {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--code-bg);
+}
+
+.recipe-name {
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+.recipe-meta {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.sub-item {
+  margin: 12px 0 0;
+}
+
+.summary-card ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.summary-card li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .planner-grid,
+  .results-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 16px;
+  }
+
+  .control-panel,
+  .summary-panel,
+  .result-card {
+    padding: 18px;
+  }
+}
