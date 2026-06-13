@@ -101,7 +101,7 @@ const substitutionMap: Record<string, string> = {
   pasta: 'zucchini noodles or gluten-free pasta',
   bread: 'gluten-free bread',
   yogurt: 'dairy-free yogurt',
-  coconut milk: 'almond milk',
+  'coconut milk': 'almond milk',
   granola: 'nuts and seeds',
   egg: 'tofu scramble',
 }
