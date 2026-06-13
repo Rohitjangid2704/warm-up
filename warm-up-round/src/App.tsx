@@ -189,7 +189,8 @@ function App() {
   }
 
   const generatePlan = () => {
-    const meals: MealPlanItem[] = ['Breakfast', 'Lunch', 'Dinner'].map((mealType) => {
+    const mealTypes = ['Breakfast', 'Lunch', 'Dinner'] as const
+    const meals: MealPlanItem[] = mealTypes.map((mealType) => {
       const recipe = chooseRecipe(mealType)
       return {
         mealType,
